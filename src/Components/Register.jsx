@@ -1,6 +1,6 @@
 import "./Register.css";
 
-export function RegisterPage() {
+export function Register() {
   return (
     <div className="register">
       <h1>Register</h1>

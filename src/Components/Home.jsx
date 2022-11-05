@@ -25,9 +25,11 @@ export function Home() {
           Log in
         </button>
         <br />
-        <button id="btn-reg" type="button">
-          <Link to="/RegisterPage">Register</Link>
-        </button>
+        <Link to="/register">
+          <button id="btn-reg" type="button">
+            Register
+          </button>
+        </Link>
       </main>
     </div>
   );
