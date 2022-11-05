@@ -6,9 +6,13 @@ export function Home() {
     <div className="App">
       <nav className="nav">
         <h1>
-          <Link to="/">Our Application Name</Link>
+          <Link id="link" to="/">
+            Our Application Name
+          </Link>
         </h1>
-        <Link to="/Contact">contact</Link>
+        <Link id="link" to="/Contact">
+          Contact
+        </Link>
       </nav>
       <main className="main">
         <p id="p1">

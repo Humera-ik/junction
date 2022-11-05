@@ -12,14 +12,14 @@
 .nav h1 {
   font-size: 20px;
 }
-.nav Link {
+#link {
   padding: 20px;
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
   color: black;
 }
-.nav Link:hover {
+#Link:hover {
   color: blue;
 }
 .main {
@@ -46,6 +46,7 @@
   width: 113px;
   height: 40px;
   border-radius: 7px;
+  border: none;
 }
 #btn-reg {
   background-color: black;
