@@ -19,8 +19,8 @@
   text-decoration: none;
   color: black;
 }
-#Link:hover {
-  color: blue;
+#link:hover {
+  color: rgba(0, 0, 0, 0.395);
 }
 .main {
   padding-top: 50px;
@@ -48,6 +48,9 @@
   border-radius: 7px;
   border: none;
 }
+#btn-log:hover {
+  background-color: #532c5976;
+}
 #btn-reg {
   background-color: black;
   color: white;
@@ -56,4 +59,8 @@
   width: 113px;
   height: 40px;
   border-radius: 7px;
+  border: none;
+}
+#btn-reg:hover {
+  background-color: rgba(0, 0, 0, 0.395);
 }

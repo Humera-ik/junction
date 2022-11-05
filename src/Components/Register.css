@@ -47,3 +47,20 @@ input {
   padding: 12px;
   margin: 10px;
 }
+#cross {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 60px;
+  transform: rotate(45deg);
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+#cross:hover {
+  color: rgba(0, 0, 0, 0.395);
+}
+#btn:hover {
+  background-color: #d5dff6c1;
+  cursor: pointer;
+}

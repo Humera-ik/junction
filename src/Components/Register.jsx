@@ -1,4 +1,5 @@
 import "./Register.css";
+import { Link } from "react-router-dom";
 
 export function Register() {
   return (
@@ -19,6 +20,9 @@ export function Register() {
       <br />
       <br />
       <input id="btn" type="submit" value="Create Account" />
+      <Link to="/">
+        <b id="cross">+</b>
+      </Link>
     </div>
   );
 }
