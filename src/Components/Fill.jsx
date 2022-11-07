@@ -4,30 +4,45 @@ import { Link } from "react-router-dom";
 export function Fill() {
   return (
     <div className="fill">
-      <h1>Can you tell us a bit more about Yourself?</h1>
-      <div className="div">
-        <p>Gender</p>
-        <input type="radio" id="female" name="female" value="Female" />
+      <h1>Can you tell us a bit more about Yourself</h1>
+      <br />
+      <div className="btn">
+        <h3>Gender</h3>
+        <input type="radio" id="female" name="gender" value="Female" />
         <label for="female">Female</label>
-        <input type="radio" id="male" name="male" value="Male" />
+        <input type="radio" id="male" name="gender" value="Male" />
         <label for="male">Male</label>
-        <input type="radio" id="any" name="any" value="any" />
+        <input type="radio" id="any" name="gender" value="any" />
         <label for="any">I'd rather not say</label>
       </div>
-      <div className="div">
-        <p>Education</p>
-        <input id="edu" name="edu" type="text" />
-      </div>
-      <div className="div">
-        <p>Age</p>
-        <input id="age" name="age" type="text" />
-      </div>
+
       <div className="btn">
-        <input id="btn" type="submit" value="Next" />
+        <h3>Education</h3>
+        <label for="education"> </label>
+        <select name="education" id="edu" required>
+          <option value="None" selected disabled>
+            None
+          </option>
+          <option value="phd">Phd</option>
+          <option value="Masters">Masters</option>
+          <option value="Bachelors">Bachelors</option>
+          <option value="other">other</option>
+        </select>
       </div>
-      <Link to="/register">
-        <b id="skip">Skip</b>
-      </Link>
+
+      <div className="btn">
+        <h3>Age</h3>
+        <input id="age" name="age" type="number" min="1" max="80" required />
+      </div>
+      <br />
+      <div className="btn">
+        <Link to="/register/game">
+          <input id="btn" type="submit" value="Next" />
+        </Link>
+        <Link to="/register">
+          <b id="skip">Skip</b>
+        </Link>
+      </div>
     </div>
   );
 }

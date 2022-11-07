@@ -1,19 +1,36 @@
-h1 {
+.fill {
+  margin: 0;
+  padding: 70px;
   text-align: center;
+}
+
+#edu {
+  border: 1px solid black;
+  width: 45%;
+  padding: 10px;
+}
+.btn {
+  width: 45%;
+  margin: auto;
+  text-align: left;
+}
+#age {
+  border: 1px solid black;
+  padding: 10px !important;
+  margin: 0;
+  width: 45%;
+}
+#btn {
+  position: relative;
+  left: 25%;
 }
 #skip {
   text-decoration: none;
   color: black;
   position: fixed;
-  top: 20px;
+  top: 50px;
   right: 20px;
 }
-#skip:hover {
+#skip :hover {
   color: rgba(0, 0, 0, 0.395);
-}
-div {
-  margin: auto;
-  width: 80%;
-  padding: 0;
-  margin: 0;
 }
