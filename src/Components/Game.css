@@ -1,38 +1,20 @@
-#btn-back {
-  position: fixed;
-  left: 100px;
-  bottom: 40px;
-  width: 15%;
-  color: white;
-  background-color: blue;
-  padding: 10px;
+.game {
   margin: 0;
-  border-radius: 7px;
-  border: none;
-  cursor: pointer;
+  padding: 60px;
 }
-#btn-next {
-  position: fixed;
-  right: 100px;
-  bottom: 40px;
-  width: 15%;
-  color: white;
-  background-color: blue;
-  padding: 10px;
-  margin: 0;
-  border-radius: 7px;
-  border: none;
-  cursor: pointer;
+.game .flex {
+  display: flex;
+  justify-content: space-around;
 }
-#btn-next:hover,
-#btn-back:hover {
-  background-color: rgba(0, 0, 255, 0.295);
+.game #btn {
+  margin: 30px;
 }
-#skip {
+
+.game #skip {
   text-decoration: none;
   color: black;
   position: fixed;
-  top: 20px;
+  top: 80px;
   right: 20px;
 }
 #skip:hover {
@@ -41,19 +23,19 @@
 
 #img {
   background-image: url(./MentalHealth.jpg);
-  width: 1200px;
+  width: 1150px;
   height: 450px;
   padding-bottom: 20px;
   text-align: center;
 }
 #play-btn {
   width: 70px;
-  position: fixed;
+  position: relative;
   top: 47%;
-  left: 47%;
   padding: 10px;
-  background-color: pink;
-  color: white;
+  background-color: white;
+  color: black;
+  font-weight: bold;
   border: none;
   cursor: wait;
 }

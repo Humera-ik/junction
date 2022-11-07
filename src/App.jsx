@@ -8,6 +8,7 @@ import { Fill } from "./Components/Fill.jsx";
 import { Game } from "./Components/Game.jsx";
 import { Talk } from "./Components/Talk.jsx";
 import { Last } from "./Components/Last.jsx";
+import { Contact } from "./Components/Contact.jsx";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       </nav>
       <Routes>
         <Route path="/" element={<Home />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
         <Route path="/login" element={<LogIn />}></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/register/fill" element={<Fill />}></Route>

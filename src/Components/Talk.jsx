@@ -28,9 +28,9 @@ export function Talk() {
         Funding
       </button>
       {more ? (
-        <button id="btn" type="button" onClick={handleMoreClick}>
+        <p type="button" onClick={handleMoreClick}>
           + more
-        </button>
+        </p>
       ) : (
         <>
           <button id="btn" type="button">
@@ -39,9 +39,9 @@ export function Talk() {
           <button id="btn" type="button">
             Industry
           </button>
-          <button id="btn" type="button" onClick={handleLessClick}>
+          <p type="button" onClick={handleLessClick}>
             - less
-          </button>
+          </p>
         </>
       )}
 
@@ -59,13 +59,13 @@ export function Talk() {
         Social Science
       </button>
       {more ? (
-        <button id="btn" type="button" onClick={handleMoreClick}>
+        <p type="button" onClick={handleMoreClick}>
           + more
-        </button>
+        </p>
       ) : (
-        <button id="btn" type="button" onClick={handleLessClick}>
+        <p type="button" onClick={handleLessClick}>
           - less
-        </button>
+        </p>
       )}
       <Link to="/register/game">
         <button id="btn-back" type="button">

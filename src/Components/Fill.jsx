@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export function Fill() {
   return (
     <div className="fill">
-      <h1>Can you tell us a bit more about Yourself</h1>
+      <h1>Can you tell us a bit more about Yourself?</h1>
       <br />
       <div className="btn">
         <h3>Gender</h3>
@@ -15,7 +15,6 @@ export function Fill() {
         <input type="radio" id="any" name="gender" value="any" />
         <label for="any">I'd rather not say</label>
       </div>
-
       <div className="btn">
         <h3>Education</h3>
         <label for="education"> </label>
@@ -29,20 +28,17 @@ export function Fill() {
           <option value="other">other</option>
         </select>
       </div>
-
       <div className="btn">
         <h3>Age</h3>
         <input id="age" name="age" type="number" min="1" max="80" required />
       </div>
       <br />
-      <div className="btn">
-        <Link to="/register/game">
-          <input id="btn" type="submit" value="Next" />
-        </Link>
-        <Link to="/register">
-          <b id="skip">Skip</b>
-        </Link>
-      </div>
+      <Link to="/register/game">
+        <input id="btn" type="submit" value="Next" />
+      </Link>
+      <Link to="/register">
+        <b id="skip">Skip</b>
+      </Link>
     </div>
   );
 }
