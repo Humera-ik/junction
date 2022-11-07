@@ -9,15 +9,15 @@ export function Fill() {
       <div className="btn">
         <h3>Gender</h3>
         <input type="radio" id="female" name="gender" value="Female" />
-        <label for="female">Female</label>
+        <label htmlFor="female">Female</label>
         <input type="radio" id="male" name="gender" value="Male" />
-        <label for="male">Male</label>
+        <label htmlFor="male">Male</label>
         <input type="radio" id="any" name="gender" value="any" />
-        <label for="any">I'd rather not say</label>
+        <label htmlFor="any">I'd rather not say</label>
       </div>
       <div className="btn">
         <h3>Education</h3>
-        <label for="education"> </label>
+        <label htmlFor="education"> </label>
         <select name="education" id="edu" required>
           <option value="None" selected disabled>
             None
