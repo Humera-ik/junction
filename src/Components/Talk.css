@@ -17,7 +17,7 @@
 #btn-back {
   position: fixed;
   left: 100px;
-  bottom: 100px;
+  bottom: 60px;
   width: 15%;
   color: white;
   background-color: blue;
@@ -29,7 +29,7 @@
 #btn-next {
   position: fixed;
   right: 100px;
-  bottom: 100px;
+  bottom: 60px;
   width: 15%;
   color: white;
   background-color: blue;
@@ -46,9 +46,12 @@
   text-decoration: none;
   color: black;
   position: fixed;
-  top: 20px;
+  top: 80px;
   right: 20px;
 }
 #skip :hover {
   color: rgba(0, 0, 0, 0.395);
+}
+.head p {
+  cursor: pointer;
 }

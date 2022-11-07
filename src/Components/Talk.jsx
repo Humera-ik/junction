@@ -3,13 +3,21 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export function Talk() {
-  const [more, setMore] = useState(true);
-  const handleMoreClick = () => {
-    setMore(false);
+  const [moreOne, setMoreOne] = useState(true);
+  const [moreTwo, setMoreTwo] = useState(true);
+  const handleMoreOneClick = () => {
+    setMoreOne(false);
   };
 
-  const handleLessClick = () => {
-    setMore(true);
+  const handleLessOneClick = () => {
+    setMoreOne(true);
+  };
+  const handleMoreTwoClick = () => {
+    setMoreTwo(false);
+  };
+
+  const handleLessTwoClick = () => {
+    setMoreTwo(true);
   };
   return (
     <div className="head">
@@ -27,8 +35,8 @@ export function Talk() {
       <button id="btn" type="button">
         Funding
       </button>
-      {more ? (
-        <p type="button" onClick={handleMoreClick}>
+      {moreOne ? (
+        <p type="button" onClick={handleMoreOneClick}>
           + more
         </p>
       ) : (
@@ -39,7 +47,7 @@ export function Talk() {
           <button id="btn" type="button">
             Industry
           </button>
-          <p type="button" onClick={handleLessClick}>
+          <p type="button" onClick={handleLessOneClick}>
             - less
           </p>
         </>
@@ -53,17 +61,17 @@ export function Talk() {
         Physics
       </button>
       <button id="btn" type="button">
-        computer Science
+        Computer Science
       </button>
       <button id="btn" type="button">
         Social Science
       </button>
-      {more ? (
-        <p type="button" onClick={handleMoreClick}>
+      {moreTwo ? (
+        <p type="button" onClick={handleMoreTwoClick}>
           + more
         </p>
       ) : (
-        <p type="button" onClick={handleLessClick}>
+        <p type="button" onClick={handleLessTwoClick}>
           - less
         </p>
       )}
