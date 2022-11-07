@@ -5,10 +5,31 @@ export function Register() {
   return (
     <div className="register">
       <h1>Register</h1>
-      <input id="name" name="fullname" type="text" placeholder="Full name" />
+      <input
+        id="name"
+        name="username"
+        type="text"
+        placeholder="Username"
+        required
+      />
       <br />
       <br />
-      <input id="email" name="email" type="email" placeholder="Email address" />
+      <input
+        id="nickname"
+        name="nickname"
+        type="text"
+        placeholder="Nickname(For Your anonymous identity)"
+        required
+      />
+      <br />
+      <br />
+      <input
+        id="email"
+        name="email"
+        type="email"
+        placeholder="Email address (University)"
+        required
+      />
       <br />
       <br />
       <input
@@ -16,10 +37,13 @@ export function Register() {
         name="password"
         type="password"
         placeholder="Password"
+        required
       />
       <br />
       <br />
-      <input id="btn" type="submit" value="Create Account" />
+      <Link to="/register/fill">
+        <input id="btn" type="submit" value="Create Account" />
+      </Link>
       <Link to="/">
         <b id="cross">+</b>
       </Link>
