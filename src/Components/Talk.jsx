@@ -7,6 +7,7 @@ export function Talk() {
   const handleMoreClick = () => {
     setMore(false);
   };
+
   const handleLessClick = () => {
     setMore(true);
   };
@@ -43,6 +44,7 @@ export function Talk() {
           </button>
         </>
       )}
+
       <h3>Fields</h3>
       <button id="btn" type="button">
         Bio Science
@@ -65,18 +67,18 @@ export function Talk() {
           - less
         </button>
       )}
-      <Link to="/register">
+      <Link to="/register/game">
         <button id="btn-back" type="button">
           Back
         </button>
       </Link>
-      <Link to="/register/talk">
+      <Link to="/register/last">
         <button id="btn-next" type="button">
           Next
         </button>
       </Link>
-      <Link to="/register/game">
-        <b id="skip">skip</b>
+      <Link to="/register">
+        <b id="skip">Skip</b>
       </Link>
     </div>
   );

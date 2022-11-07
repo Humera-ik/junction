@@ -7,6 +7,7 @@ import { Register } from "./Components/Register.jsx";
 import { Fill } from "./Components/Fill.jsx";
 import { Game } from "./Components/Game.jsx";
 import { Talk } from "./Components/Talk.jsx";
+import { Last } from "./Components/Last.jsx";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/register/fill" element={<Fill />}></Route>
         <Route path="/register/game" element={<Game />}></Route>
         <Route path="/register/talk" element={<Talk />}></Route>
+        <Route path="/register/last" element={<Last />}></Route>
       </Routes>
     </BrowserRouter>
   );
